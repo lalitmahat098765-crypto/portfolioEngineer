@@ -1,0 +1,55 @@
+.hero {
+  min-height: 100vh;              /* Full viewport height */
+  background-image: url("../assets/images/civilp1.png"); /* place in public/images */
+  background-size: cover;         /* covers entire screen */
+  background-position: center;    /* center image */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* optional overlay for better text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.herocontent {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.herobutton{
+  background-color: #f1f5f9;
+  border:none;
+  border-radius: 2px;
+  font-size: 15px;
+  margin-right: 20px;
+  padding: 5px 18px;
+}
+
+.herobutton:hover{
+  background-color:#fb923c;
+  transition: all 0.3s ease 0.15s;
+}
+
+.heroheading{
+  letter-spacing:.05rem;
+}
+
+.herosubheading{
+    font-size:20px;
+    word-spacing: .2rem;
+    letter-spacing: .1rem;
+}
+
+.heroparagrap{
+    font-size: 14px;
+    letter-spacing: .1rem;
+}
