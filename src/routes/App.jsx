@@ -1,12 +1,13 @@
-import NavBar from './components/NavBar'
-import Hero from './components/Hero'
+import NavBar from "../components/NavBar";
+import { Outlet } from "react-router-dom";
 import styles from './App.module.css'
 
 function App(){
   return(
   <div className={`${styles.bg}`}>
     <NavBar />
-    <Hero />
+    <Outlet />
   </div>)
 }
+
 export default App;
